@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <img src="/images/logo.svg" alt="Company Logo" />
+        <ul id="myLinks" class="nav-menu">
+          <li>Features</li>
+          <li>Company</li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div class="nav-buttons" id="myLinks">
+        <button class="login">Login</button>
+        <button class="register">Register</button>
+      </div>
+    </nav>
+
+    <section class="container">
+      <div class="content">
+        <h1>Make remote work</h1>
+        <h4>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </h4>
+        <button class="more">Learn More</button>
+        <div class="icons-container">
+          <img src="/images/client-databiz.svg" alt="databiz" />
+          <img src="/images/client-audiophile.svg" alt="audiophile" />
+          <img src="/images/client-meet.svg" alt="client-meet" />
+          <img src="/images/client-maker.svg" alt="client-maker" />
+        </div>
+      </div>
+      <div class="background-img">
+        <img src="/images/image-hero-desktop.png" alt="Hero Image" />
+      </div>
+    </section>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
